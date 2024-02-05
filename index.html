@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/iphone.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-gray-500 body">
+    <div class="container mx-auto px-11 relative w-full h-screen">
+      <header class="flex justify-between items-center pt-3">
+        <div class="logo w-12">
+          <a href=""> <img src="image/logo.png" alt="" /> </a>
+        </div>
+        <nav>
+          <ul class="flex">
+            <li class="mr-5 text-black"><a href="">Home</a></li>
+            <li class="mr-5 text-white hover:text-black">
+              <a href="">products</a>
+            </li>
+            <li class="mr-5 text-white hover:text-black">
+              <a href="">News</a>
+            </li>
+            <li class="mr-5 text-white hover:text-black">
+              <a href="">About</a>
+            </li>
+            <li class="mr-5 text-white hover:text-black">
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="flex justify-between items-center w-10/12 m-auto pt-10">
+        <div class="text-a">
+          <h2 class="text-3xl font-bold pb-3 uppercase">i phone 13 pro max</h2>
+          <p class="w-1/2 pb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eos
+            omnis rerum. Similique excepturi atque voluptatum soluta nisi!
+            Doloribus, quasi perspiciatis. Itaque, a culpa? Reprehenderit cumque
+            totam impedit eaque officiis.
+          </p>
+          <button class="btn rounded-full bg-white px-5 py-2 text-black">
+            All Product
+          </button>
+        </div>
+        <div class="image">
+          <img class="imgs" src="image/0.png" alt="" />
+        </div>
+      </div>
+      <div class="images flex absolute bottom-5 left-1/2 -translate-x-1/2">
+        <img
+          onclick="changeimag(this.src);changeback('#263238')"
+          class="w-10 cursor-pointer hover:scale-125 duration-75"
+          src="image/0.png"
+          alt=""
+        />
+        <img
+          onclick="changeimag(this.src); changeback('#b0bec5')"
+          class="w-10 cursor-pointer hover:scale-125 duration-75"
+          src="image/1.png"
+          alt=""
+        />
+        <img
+          onclick="changeimag(this.src);changeback('#263238')"
+          class="w-10 cursor-pointer hover:scale-125 duration-75"
+          src="image/2.png"
+          alt=""
+        />
+        <img
+          onclick="changeimag(this.src);changeback('#bcaaa4')"
+          class="w-10 cursor-pointer hover:scale-125 duration-75"
+          src="image/3.png"
+          alt=""
+        />
+        <img
+          onclick="changeimag(this.src);changeback('#dd2c00')"
+          class="w-10 cursor-pointer hover:scale-125 duration-75"
+          src="image/4.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
